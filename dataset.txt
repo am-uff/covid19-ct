@@ -1,0 +1,1 @@
+Link para o dataset: https://github.com/UCSD-AI4H/COVID-CT
