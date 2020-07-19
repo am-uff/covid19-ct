@@ -2,7 +2,7 @@
 
 O diretório `notebooks` contém todos os passos para repdodução dos experimentos.
 Para simplificar o trabalho em relação a instalação das dependências e bibliotecas,
-sugerimos usar o [Google Colab](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb). Dessa forma, todos as dependências serão automaticamente satisfeitas.
+sugerimos usar o [Google Colab](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb). Dessa forma, todas as dependências serão automaticamente satisfeitas.
 
 
 ## Sobre as CNNs propostas para a detecção da Covid-19.
