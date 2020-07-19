@@ -11,7 +11,7 @@ sugerimos usar o [Google Colab](https://colab.research.google.com/github/googlec
 
 O Método 1 proposto neste trabalho se baseia na técnica de transferência de aprendizado
 utilizando uma base convolucional de uma arquitetura `VGG-16` treinada com imagens
-da Imagenet [Deng et al. 2009] combinada com módulos `Inception` e camadas completamente
+da `Imagenet` [Deng et al. 2009] combinada com módulos `Inception` e camadas completamente
 conectadas para classificar imagens de tomografia computadorizada indicando se
 o paciente tem COVID-19 ou não.
 
@@ -45,21 +45,21 @@ não linear ReLU e na última camada de classificação optou-se por utilizar a 
 Para o treinamento foram utilizadas 30 epochs e na otimização aplicou-se Adam
 com um _learning rate_ de 0.001. 
 
-A diferença do método proposto, está no fato de explorar informações de imagens médicas de mesmo domínio ao invés de usar, por exemplo, os pesos aprendidos com o treinamento em imagens de outros domínios (Imagenet), menos relevantes ao problema.
+A diferença do método proposto, está no fato de explorar informações de imagens médicas de mesmo domínio ao invés de usar, por exemplo, os pesos aprendidos com o treinamento em imagens de outros domínios (`Imagenet`), menos relevantes ao problema.
 
 __Notebook para o método 2__: [transfer_learning_densenet121.ipynb](notebooks/transfer_learning_densenet121.ipynb)
 
 
 ## Resultados Obtidos
 
-Para o método 1 obtivemos os seguintes resultados: acurácia (0.74), F1-Score (0.75) e AUC (0.80). O método 2 atingiu uma acurácia de (0.79), F1-Score (0.78) e AUC (0.85).
+Para o método 1 obtivemos os seguintes resultados: __acurácia (0.74)__, __F1-Score (0.75)__ e __AUC (0.80)__. O método 2 atingiu uma __acurácia de (0.79)__, __F1-Score (0.78)__ e __AUC (0.85)__.
 
 
 ## Dataset
 
 Disponível em: https://github.com/UCSD-AI4H/COVID-CT
 
-O dataset utilizado neste trabalho [Zhao et al. 2020] possui 746 imagens de TC de Tórax em formato JPG e PNG, coletados entre o período de janeiro e abril de 2020, referentes à 760 _preprints_ encontrados em diferentes repositórios médicos. A coleta das imagens contidas nos preprints e todo o pré-processamento foi descrito em [Yang et al. 2020] e reflete o diagnóstico médico de 271 pacientes. Dentre as imagens, 349 (47%) são casos de COVID-19 (diagn´ostico positivo) e 397 (53%) de casos normais (diagn´ostico negativo).
+O dataset utilizado neste trabalho [Zhao et al. 2020] possui 746 imagens de TC de Tórax em formato JPG e PNG, coletados entre o período de janeiro e abril de 2020, referentes à 760 _preprints_ encontrados em diferentes repositórios médicos. A coleta das imagens contidas nos preprints e todo o pré-processamento foi descrito em [Yang et al. 2020] e reflete o diagnóstico médico de 271 pacientes. Dentre as imagens, 349 (47%) são casos de COVID-19 (diagnóstico positivo) e 397 (53%) de casos normais (diagnóstico negativo).
 
 As dimensões das imagens variam, na altura foi observado um mínimo de 153 pixels, uma
 média de 491 pixels e um máximo de 1853 pixels. Já para o comprimento foi observado
